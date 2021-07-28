@@ -93,12 +93,12 @@ void if_reposo()
 void if_activo()
 {
   if(activo){
-    boolean ganaron = false;
-    int sensorValue = analogRead(A0);
-    if(sensorValue < 500){contador_tiempo = millis();}
-    if((millis()-contador_tiempo) < DELAY_HABLA){}else{timer_letra = millis();}
-    if((millis()-timer_letra) > DELAY_FIN){ganaron = true;}
-    if(check(0,PAL2,DS) || ganaron){digitalWrite(REL3,HIGH);digitalWrite(REL4,LOW);delay(5000);activo = false; resuelto = true;digitalWrite(REL4,HIGH);}
+//    boolean ganaron = false;
+//    int sensorValue = analogRead(A0);
+//    if(sensorValue < 500){contador_tiempo = millis();}
+//    if((millis()-contador_tiempo) < DELAY_HABLA){}else{timer_letra = millis();}
+//    if((millis()-timer_letra) > DELAY_FIN){ganaron = true;}
+//    if(check(0,PAL2,DS) || ganaron){digitalWrite(REL3,HIGH);digitalWrite(REL4,LOW);delay(5000);activo = false; resuelto = true;digitalWrite(REL4,HIGH);}
 
   }
 }

@@ -12,8 +12,8 @@
 #include <Max72xxPanel.h>
 
 //DEFINES
-#define IMAN  2 
-#define RESET 3
+#define IMAN  3 
+#define RESET 2
 
 #define DS  50
   
@@ -75,7 +75,7 @@ void setup() {
 }
 
 void loop() {
-// if(check(0,RESET,DS)){tiempo_restante = 3600;play=true;relojea();}
+ if(check(0,RESET,DS)){tiempo_restante = 3600;play=true;relojea();}
  relojea();
  controlea();
 
